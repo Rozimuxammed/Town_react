@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.container .loader {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container img {
+    width: 150px;
+    object-fit: contain;
+}
+
+.cards {
+    width: 800px;
+    height: 800px;
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.cards img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: all .4s ease;
+}
+
+.cards img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card_about {
+    padding: 20px 20px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.title p {
+    background-color: rgb(81, 81, 107);
+    padding: 2px 10px;
+    cursor: default;
+    transition: all .3s ease;
+}
+.text p span{
+    color: orange;
+    cursor: pointer;
+}
+.text {
+    text-align: center;
+}
+
+.text p {
+    margin-bottom: 30px;
+    transition: all .3s ease;
+    padding: 0 20px;
+}
+
+.title h2 {
+    transition: all .3s ease;
+}
+
+.text p:hover,
+.title h2:hover {
+    color: rgb(94, 94, 148);
+    cursor: default;
+}
+
+.text button {
+    width: 200px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 8px 0;
+    cursor: pointer;
+    letter-spacing: 1px;
+    background-color: rgb(81, 81, 107);
+    transition: all .2s ease;
+}
+
+.text button:hover,
+.title p:hover {
+    color: rgb(81, 81, 107);
+    background-color: white;
+    font-weight: 600;
+}
+.refresh{
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
